@@ -1,0 +1,46 @@
+@import "../../styles/mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 23px;
+  margin-top: 100px;
+  background: transparent linear-gradient(180deg, #c2e3f3 0%, #6aa3c1 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 4px 6px 23px #a9a9a911;
+  justify-content: space-between;
+  align-items: center;
+  height: 167px;
+  padding: 0 50px;
+  span {
+    font-family: "Monster";
+    font-size: 50px;
+    color: #425966;
+    margin: 20px 0 0 0;
+  }
+  @include phone {
+    span {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 880px) {
+    height: 70px;
+    padding: 0 28px;
+    span {
+      font-size: 27px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    span {
+      font-size: 18px !important;
+    }
+  }
+}
+.image {
+  @media screen and (max-width: 880px) {
+    width: 228px;
+    height: 106px;
+  }
+}

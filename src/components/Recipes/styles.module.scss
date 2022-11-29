@@ -1,0 +1,48 @@
+@import "../../styles/mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+  padding: 0 70px;
+  h3 {
+    font-family: "Monster";
+    font-size: 67px;
+    color: #d84a4a;
+    margin: 20px 0 0 0;
+  }
+  @include phone {
+    padding: 0 0 0 70px;
+  }
+  @media screen and (max-width: 880px) {
+    padding: 0 0 0 30px;
+    h3 {
+      text-align: center;
+    }
+  }
+  box-sizing: border-box;
+}
+
+.recipes {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  gap: 20px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.loader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
